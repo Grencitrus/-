@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI myTimeText;
     TimeSpan myTimeLeft;
-    bool myTimerActive;
+     bool myTimerActive;
     float myElapsedTime;
     float myTimerLength = 120;
 
@@ -64,5 +64,7 @@ public class Timer : MonoBehaviour
         myTimeText.fontSize = 35;
 
     }
+
+    public float AccessMyElasped { get => myElapsedTime; set => myElapsedTime = value; }
 
 }

@@ -162,6 +162,8 @@ GameObject:
   - component: {fileID: 176450746}
   - component: {fileID: 176450745}
   - component: {fileID: 176450744}
+  - component: {fileID: 176450748}
+  - component: {fileID: 176450747}
   m_Layer: 0
   m_Name: gamerr
   m_TagString: Untagged
@@ -201,6 +203,7 @@ MonoBehaviour:
   Spawn: {fileID: 69781187}
   ObjectToSpawn: {fileID: 5542143576579855046, guid: e572a17ba7d139b4891283c1e3f55cc4,
     type: 3}
+  DoorChime: {fileID: 8300000, guid: 6a3fb4dcace135d43b2b61c153e91acc, type: 3}
 --- !u!4 &176450746
 Transform:
   m_ObjectHideFlags: 0
@@ -213,9 +216,40 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 69781188}
+  - {fileID: 1045647898}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &176450747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176450743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a8a7036d6120d4baa6a5580d96b57c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExitPoint: {fileID: 1045647897}
+--- !u!114 &176450748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176450743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d533d2ccab882d44d8fb9c8253ea60c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Food:
+  - {fileID: 1042247265063580962, guid: 7b05e4f329decd34f8a8e1e913a7468d, type: 3}
+  - {fileID: 9018013791260005541, guid: de61d4cdf71969544bb5cab89b0d91a0, type: 3}
+  - {fileID: 8065735483985395347, guid: e2a040101a36fc94ba1b758d5d8a5c7f, type: 3}
+  - {fileID: 4557149896223581361, guid: dc436c91302c17546a9c5132b303af8f, type: 3}
 --- !u!1 &181380850
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +362,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1045647897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1045647898}
+  m_Layer: 0
+  m_Name: ExitPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1045647898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045647897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13, y: 2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 176450746}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181858897
 GameObject:

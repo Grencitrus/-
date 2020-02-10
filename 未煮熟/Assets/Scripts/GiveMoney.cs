@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GiveMoney : MonoBehaviour
 {
@@ -21,9 +22,19 @@ public class GiveMoney : MonoBehaviour
     public void CostumerMoney()
     {
         float tempMoney;
-        tempMoney = 25 + (75 * 0.01f);
 
-        myMoney += tempMoney;
+        if (GetComponent<Timer>().AccessMyElasped > 25)
+        {
+            tempMoney = 100;
+            myMoney += tempMoney;
+        }
+        else if (GetComponent<Timer>().AccessMyElasped > 25)
+        {
+            tempMoney = 25 * ((25 / GetComponent<Timer>().AccessMyElasped) + 1);
+
+            myMoney += tempMoney;
+        }
+        int rounded = (int)Math.Round(myMoney, 0);
 
     }
 

@@ -45,7 +45,7 @@ public class PersonCode : MonoBehaviour
         if (PersonExiting.foodGotten == true)
         {
             FindCostumerSpot.AvailableSpots[SeatTaken] = 0;
-            //stänger av timer ger pengar 
+            
             transform.position = Vector2.MoveTowards(transform.position, PersonExiting.Exit, MoveSpeed);
         }
     }
